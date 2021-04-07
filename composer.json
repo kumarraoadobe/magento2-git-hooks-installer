@@ -1,0 +1,22 @@
+{
+  "name": "kumarraoadobe/magento2-git-hooks-installer",
+  "type": "composer-plugin",
+  "description": "Magento2 Code Standard git hook installer",
+  "autoload": {
+    "psr-4": { "Kumarraoadobe\\": "src/" }
+  },
+  "authors": [
+    {"name": "Kamendra Kumar Rao", "email": "kumarrao@adobe.com"}
+  ],
+  "require": {
+    "composer-plugin-api": "^1.0",
+    "symfony/process": ">=2.3"
+  },
+  "require-dev": {
+    "composer/composer": "~1.0@dev",
+    "magento/magento-coding-standard": "^6.0"
+  },
+  "extra": {
+    "class": "Kumarraoadobe\\Magento2GitHooksInstaller\\Composer\\Plugin"
+  }
+}
